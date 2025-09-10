@@ -1,7 +1,11 @@
+import './Spline.css'
+
 import Spline from '@splinetool/react-spline';
 
-export default function Home() {
+const SplineComponent = () => {
   return (
-    <Spline scene="https://prod.spline.design/a9PQzMAFbNBAbNrn/scene.splinecode" />
+    <Spline className="spline" scene="https://prod.spline.design/a9PQzMAFbNBAbNrn/scene.splinecode" />
   );
 }
+
+export default SplineComponent;
