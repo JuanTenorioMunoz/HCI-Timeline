@@ -17,7 +17,10 @@ export default function Three() {
         intensity={1.2}
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
-      />
+        shadow-bias={-0.0001}>
+    
+        </directionalLight>
+
 
       <pointLight position={[-5, 3, -5]} intensity={0.6} />
 
@@ -33,10 +36,6 @@ export default function Three() {
       </mesh>
 
       <OrbitControls />
-
-      <EffectComposer>
-        <Bloom intensity={1.5} threshold={0.2} radius={0.9} />
-      </EffectComposer>
     </Canvas>
   )
 }
